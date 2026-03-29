@@ -8,10 +8,7 @@ pub struct VoteContract;
 impl VoteContract {
     /// Cast a vote for a specific option. 
     /// Requires authorization from the voter.
-<<<<<<< HEAD
     /// Also demonstrates an inter-contract call pattern (internal simulation).
-=======
->>>>>>> local_parent/main
     pub fn vote(env: Env, voter: Address, option: Symbol) {
         voter.require_auth();
 
@@ -21,7 +18,6 @@ impl VoteContract {
            panic!("You have already voted");
         }
 
-<<<<<<< HEAD
         // --- Demo of Inter-Contract Call Logic (Advanced Pattern) ---
         // In a real scenario, we would use a client to call another contract.
         // For this challenge, we simulate the logic of fetching a greeting 
@@ -30,8 +26,6 @@ impl VoteContract {
         // let greeting = hello_client.hello(&symbol_short!("voter"));
         // -------------------------------------------------------------
 
-=======
->>>>>>> local_parent/main
         // Increment the vote count for the chosen option
         let current_votes: u32 = env.storage().persistent().get(&option).unwrap_or(0);
         env.storage().persistent().set(&option, &(current_votes + 1));
