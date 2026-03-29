@@ -1,0 +1,566 @@
+build	Set up job	﻿2026-03-29T11:49:00.2294591Z Current runner version: '2.333.0'
+build	Set up job	2026-03-29T11:49:00.2331133Z ##[group]Runner Image Provisioner
+build	Set up job	2026-03-29T11:49:00.2332317Z Hosted Compute Agent
+build	Set up job	2026-03-29T11:49:00.2333277Z Version: 20260213.493
+build	Set up job	2026-03-29T11:49:00.2334251Z Commit: 5c115507f6dd24b8de37d8bbe0bb4509d0cc0fa3
+build	Set up job	2026-03-29T11:49:00.2335332Z Build Date: 2026-02-13T00:28:41Z
+build	Set up job	2026-03-29T11:49:00.2336491Z Worker ID: {d7cd3230-db61-484b-9943-49b2a27c25c3}
+build	Set up job	2026-03-29T11:49:00.2337789Z Azure Region: eastus
+build	Set up job	2026-03-29T11:49:00.2338667Z ##[endgroup]
+build	Set up job	2026-03-29T11:49:00.2340776Z ##[group]Operating System
+build	Set up job	2026-03-29T11:49:00.2341844Z Ubuntu
+build	Set up job	2026-03-29T11:49:00.2342593Z 24.04.4
+build	Set up job	2026-03-29T11:49:00.2343417Z LTS
+build	Set up job	2026-03-29T11:49:00.2344108Z ##[endgroup]
+build	Set up job	2026-03-29T11:49:00.2344837Z ##[group]Runner Image
+build	Set up job	2026-03-29T11:49:00.2345890Z Image: ubuntu-24.04
+build	Set up job	2026-03-29T11:49:00.2346662Z Version: 20260323.65.1
+build	Set up job	2026-03-29T11:49:00.2348603Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260323.65/images/ubuntu/Ubuntu2404-Readme.md
+build	Set up job	2026-03-29T11:49:00.2351428Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260323.65
+build	Set up job	2026-03-29T11:49:00.2353023Z ##[endgroup]
+build	Set up job	2026-03-29T11:49:00.2354774Z ##[group]GITHUB_TOKEN Permissions
+build	Set up job	2026-03-29T11:49:00.2357719Z Contents: read
+build	Set up job	2026-03-29T11:49:00.2358631Z Metadata: read
+build	Set up job	2026-03-29T11:49:00.2359421Z Packages: read
+build	Set up job	2026-03-29T11:49:00.2360175Z ##[endgroup]
+build	Set up job	2026-03-29T11:49:00.2363112Z Secret source: Actions
+build	Set up job	2026-03-29T11:49:00.2364221Z Prepare workflow directory
+build	Set up job	2026-03-29T11:49:00.2823759Z Prepare all required actions
+build	Set up job	2026-03-29T11:49:00.2879251Z Getting action download info
+build	Set up job	2026-03-29T11:49:00.5601817Z Download action repository 'actions/checkout@v3' (SHA:f43a0e5ff2bd294095638e18286ca9a3d1956744)
+build	Set up job	2026-03-29T11:49:00.7304371Z Download action repository 'actions/setup-node@v3' (SHA:3235b876344d2a9aa001b8d1453c930bba69e610)
+build	Set up job	2026-03-29T11:49:01.0000858Z Complete job name: build
+build	Run actions/checkout@v3	﻿2026-03-29T11:49:01.0699037Z ##[group]Run actions/checkout@v3
+build	Run actions/checkout@v3	2026-03-29T11:49:01.0699930Z with:
+build	Run actions/checkout@v3	2026-03-29T11:49:01.0700506Z   repository: thanchanb/Stellar-Nexus
+build	Run actions/checkout@v3	2026-03-29T11:49:01.0701196Z   token: ***
+build	Run actions/checkout@v3	2026-03-29T11:49:01.0701573Z   ssh-strict: true
+build	Run actions/checkout@v3	2026-03-29T11:49:01.0701989Z   persist-credentials: true
+build	Run actions/checkout@v3	2026-03-29T11:49:01.0702427Z   clean: true
+build	Run actions/checkout@v3	2026-03-29T11:49:01.0702831Z   sparse-checkout-cone-mode: true
+build	Run actions/checkout@v3	2026-03-29T11:49:01.0703326Z   fetch-depth: 1
+build	Run actions/checkout@v3	2026-03-29T11:49:01.0703728Z   fetch-tags: false
+build	Run actions/checkout@v3	2026-03-29T11:49:01.0704114Z   lfs: false
+build	Run actions/checkout@v3	2026-03-29T11:49:01.0704489Z   submodules: false
+build	Run actions/checkout@v3	2026-03-29T11:49:01.0704889Z   set-safe-directory: true
+build	Run actions/checkout@v3	2026-03-29T11:49:01.0705570Z ##[endgroup]
+build	Run actions/checkout@v3	2026-03-29T11:49:01.1541192Z Syncing repository: thanchanb/Stellar-Nexus
+build	Run actions/checkout@v3	2026-03-29T11:49:01.1542969Z ##[group]Getting Git version info
+build	Run actions/checkout@v3	2026-03-29T11:49:01.1543756Z Working directory is '/home/runner/work/Stellar-Nexus/Stellar-Nexus'
+build	Run actions/checkout@v3	2026-03-29T11:49:01.1544763Z [command]/usr/bin/git version
+build	Run actions/checkout@v3	2026-03-29T11:49:01.1589556Z git version 2.53.0
+build	Run actions/checkout@v3	2026-03-29T11:49:01.1616351Z ##[endgroup]
+build	Run actions/checkout@v3	2026-03-29T11:49:01.1632557Z Temporarily overriding HOME='/home/runner/work/_temp/fe3c632d-74ee-44dd-8774-f0df55179ce3' before making global git config changes
+build	Run actions/checkout@v3	2026-03-29T11:49:01.1634955Z Adding repository directory to the temporary git global config as a safe directory
+build	Run actions/checkout@v3	2026-03-29T11:49:01.1637049Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/Stellar-Nexus/Stellar-Nexus
+build	Run actions/checkout@v3	2026-03-29T11:49:01.1666767Z Deleting the contents of '/home/runner/work/Stellar-Nexus/Stellar-Nexus'
+build	Run actions/checkout@v3	2026-03-29T11:49:01.1670765Z ##[group]Initializing the repository
+build	Run actions/checkout@v3	2026-03-29T11:49:01.1674520Z [command]/usr/bin/git init /home/runner/work/Stellar-Nexus/Stellar-Nexus
+build	Run actions/checkout@v3	2026-03-29T11:49:01.1765173Z hint: Using 'master' as the name for the initial branch. This default branch name
+build	Run actions/checkout@v3	2026-03-29T11:49:01.1766843Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+build	Run actions/checkout@v3	2026-03-29T11:49:01.1768698Z hint: to use in all of your new repositories, which will suppress this warning,
+build	Run actions/checkout@v3	2026-03-29T11:49:01.1770048Z hint: call:
+build	Run actions/checkout@v3	2026-03-29T11:49:01.1771218Z hint:
+build	Run actions/checkout@v3	2026-03-29T11:49:01.1772053Z hint: 	git config --global init.defaultBranch <name>
+build	Run actions/checkout@v3	2026-03-29T11:49:01.1773296Z hint:
+build	Run actions/checkout@v3	2026-03-29T11:49:01.1774251Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+build	Run actions/checkout@v3	2026-03-29T11:49:01.1775770Z hint: 'development'. The just-created branch can be renamed via this command:
+build	Run actions/checkout@v3	2026-03-29T11:49:01.1777058Z hint:
+build	Run actions/checkout@v3	2026-03-29T11:49:01.1778042Z hint: 	git branch -m <name>
+build	Run actions/checkout@v3	2026-03-29T11:49:01.1778807Z hint:
+build	Run actions/checkout@v3	2026-03-29T11:49:01.1779788Z hint: Disable this message with "git config set advice.defaultBranchName false"
+build	Run actions/checkout@v3	2026-03-29T11:49:01.1781471Z Initialized empty Git repository in /home/runner/work/Stellar-Nexus/Stellar-Nexus/.git/
+build	Run actions/checkout@v3	2026-03-29T11:49:01.1783825Z [command]/usr/bin/git remote add origin https://github.com/thanchanb/Stellar-Nexus
+build	Run actions/checkout@v3	2026-03-29T11:49:01.1806046Z ##[endgroup]
+build	Run actions/checkout@v3	2026-03-29T11:49:01.1807249Z ##[group]Disabling automatic garbage collection
+build	Run actions/checkout@v3	2026-03-29T11:49:01.1809418Z [command]/usr/bin/git config --local gc.auto 0
+build	Run actions/checkout@v3	2026-03-29T11:49:01.1835406Z ##[endgroup]
+build	Run actions/checkout@v3	2026-03-29T11:49:01.1836651Z ##[group]Setting up auth
+build	Run actions/checkout@v3	2026-03-29T11:49:01.1841535Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+build	Run actions/checkout@v3	2026-03-29T11:49:01.1868478Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+build	Run actions/checkout@v3	2026-03-29T11:49:01.2165805Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+build	Run actions/checkout@v3	2026-03-29T11:49:01.2196288Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+build	Run actions/checkout@v3	2026-03-29T11:49:01.2428529Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+build	Run actions/checkout@v3	2026-03-29T11:49:01.2461496Z ##[endgroup]
+build	Run actions/checkout@v3	2026-03-29T11:49:01.2463103Z ##[group]Fetching the repository
+build	Run actions/checkout@v3	2026-03-29T11:49:01.2471621Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --progress --no-recurse-submodules --depth=1 origin +433d8e9cf002ca8cca6eef2f091648bce04043e4:refs/remotes/origin/main
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3895257Z remote: Enumerating objects: 1076, done.        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3896773Z remote: Counting objects:   0% (1/1076)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3898758Z remote: Counting objects:   1% (11/1076)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3900014Z remote: Counting objects:   2% (22/1076)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3901356Z remote: Counting objects:   3% (33/1076)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3902923Z remote: Counting objects:   4% (44/1076)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3904777Z remote: Counting objects:   5% (54/1076)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3906226Z remote: Counting objects:   6% (65/1076)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3906995Z remote: Counting objects:   7% (76/1076)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3908359Z remote: Counting objects:   8% (87/1076)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3909796Z remote: Counting objects:   9% (97/1076)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3911433Z remote: Counting objects:  10% (108/1076)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3912440Z remote: Counting objects:  11% (119/1076)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3913360Z remote: Counting objects:  12% (130/1076)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3914853Z remote: Counting objects:  13% (140/1076)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3916512Z remote: Counting objects:  14% (151/1076)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3917910Z remote: Counting objects:  15% (162/1076)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3919332Z remote: Counting objects:  16% (173/1076)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3920089Z remote: Counting objects:  17% (183/1076)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3921778Z remote: Counting objects:  18% (194/1076)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3922714Z remote: Counting objects:  19% (205/1076)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3923490Z remote: Counting objects:  20% (216/1076)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3925484Z remote: Counting objects:  21% (226/1076)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3926531Z remote: Counting objects:  22% (237/1076)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3928024Z remote: Counting objects:  23% (248/1076)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3928844Z remote: Counting objects:  24% (259/1076)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3929633Z remote: Counting objects:  25% (269/1076)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3930370Z remote: Counting objects:  26% (280/1076)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3930966Z remote: Counting objects:  27% (291/1076)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3931553Z remote: Counting objects:  28% (302/1076)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3932137Z remote: Counting objects:  29% (313/1076)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3932723Z remote: Counting objects:  30% (323/1076)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3933620Z remote: Counting objects:  31% (334/1076)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3934260Z remote: Counting objects:  32% (345/1076)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3935137Z remote: Counting objects:  33% (356/1076)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3936110Z remote: Counting objects:  34% (366/1076)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3937069Z remote: Counting objects:  35% (377/1076)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3938520Z remote: Counting objects:  36% (388/1076)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3939149Z remote: Counting objects:  37% (399/1076)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3939925Z remote: Counting objects:  38% (409/1076)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3940523Z remote: Counting objects:  39% (420/1076)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3941326Z remote: Counting objects:  40% (431/1076)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3942096Z remote: Counting objects:  41% (442/1076)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3942805Z remote: Counting objects:  42% (452/1076)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3943761Z remote: Counting objects:  43% (463/1076)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3944499Z remote: Counting objects:  44% (474/1076)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3945107Z remote: Counting objects:  45% (485/1076)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3946159Z remote: Counting objects:  46% (495/1076)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3946975Z remote: Counting objects:  47% (506/1076)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3948545Z remote: Counting objects:  48% (517/1076)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3949290Z remote: Counting objects:  49% (528/1076)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3950313Z remote: Counting objects:  50% (538/1076)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3951171Z remote: Counting objects:  51% (549/1076)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3951892Z remote: Counting objects:  52% (560/1076)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3952657Z remote: Counting objects:  53% (571/1076)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3953450Z remote: Counting objects:  54% (582/1076)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3954166Z remote: Counting objects:  55% (592/1076)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3954756Z remote: Counting objects:  56% (603/1076)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3955701Z remote: Counting objects:  57% (614/1076)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3956578Z remote: Counting objects:  58% (625/1076)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3957710Z remote: Counting objects:  59% (635/1076)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3958427Z remote: Counting objects:  60% (646/1076)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3959042Z remote: Counting objects:  61% (657/1076)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3959636Z remote: Counting objects:  62% (668/1076)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3960224Z remote: Counting objects:  63% (678/1076)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3960807Z remote: Counting objects:  64% (689/1076)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3961394Z remote: Counting objects:  65% (700/1076)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3962000Z remote: Counting objects:  66% (711/1076)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3962962Z remote: Counting objects:  67% (721/1076)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3964069Z remote: Counting objects:  68% (732/1076)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3964683Z remote: Counting objects:  69% (743/1076)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3965508Z remote: Counting objects:  70% (754/1076)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3966094Z remote: Counting objects:  71% (764/1076)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3966678Z remote: Counting objects:  72% (775/1076)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3967891Z remote: Counting objects:  73% (786/1076)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3968740Z remote: Counting objects:  74% (797/1076)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3969565Z remote: Counting objects:  75% (807/1076)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3970151Z remote: Counting objects:  76% (818/1076)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3970752Z remote: Counting objects:  77% (829/1076)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3971333Z remote: Counting objects:  78% (840/1076)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3971915Z remote: Counting objects:  79% (851/1076)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3972483Z remote: Counting objects:  80% (861/1076)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3973060Z remote: Counting objects:  81% (872/1076)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3973636Z remote: Counting objects:  82% (883/1076)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3974218Z remote: Counting objects:  83% (894/1076)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3974798Z remote: Counting objects:  84% (904/1076)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3975377Z remote: Counting objects:  85% (915/1076)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3975961Z remote: Counting objects:  86% (926/1076)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3976550Z remote: Counting objects:  87% (937/1076)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3977868Z remote: Counting objects:  88% (947/1076)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3978766Z remote: Counting objects:  89% (958/1076)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3979364Z remote: Counting objects:  90% (969/1076)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3980176Z remote: Counting objects:  91% (980/1076)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3981214Z remote: Counting objects:  92% (990/1076)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3981950Z remote: Counting objects:  93% (1001/1076)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3982660Z remote: Counting objects:  94% (1012/1076)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3983256Z remote: Counting objects:  95% (1023/1076)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3983834Z remote: Counting objects:  96% (1033/1076)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3984428Z remote: Counting objects:  97% (1044/1076)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3985168Z remote: Counting objects:  98% (1055/1076)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3986212Z remote: Counting objects:  99% (1066/1076)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3986808Z remote: Counting objects: 100% (1076/1076)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3987681Z remote: Counting objects: 100% (1076/1076), done.        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3988477Z remote: Compressing objects:   0% (1/576)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3989403Z remote: Compressing objects:   1% (6/576)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3990036Z remote: Compressing objects:   2% (12/576)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3990990Z remote: Compressing objects:   3% (18/576)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3991796Z remote: Compressing objects:   4% (24/576)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3992428Z remote: Compressing objects:   5% (29/576)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3993288Z remote: Compressing objects:   6% (35/576)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3994599Z remote: Compressing objects:   7% (41/576)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3995217Z remote: Compressing objects:   8% (47/576)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3996002Z remote: Compressing objects:   9% (52/576)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3996614Z remote: Compressing objects:  10% (58/576)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3997216Z remote: Compressing objects:  11% (64/576)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3998105Z remote: Compressing objects:  12% (70/576)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3999079Z remote: Compressing objects:  13% (75/576)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.3999773Z remote: Compressing objects:  14% (81/576)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4000359Z remote: Compressing objects:  15% (87/576)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4000950Z remote: Compressing objects:  16% (93/576)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4001540Z remote: Compressing objects:  17% (98/576)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4002152Z remote: Compressing objects:  18% (104/576)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4003160Z remote: Compressing objects:  19% (110/576)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4003824Z remote: Compressing objects:  20% (116/576)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4004434Z remote: Compressing objects:  21% (121/576)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4005227Z remote: Compressing objects:  22% (127/576)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4006587Z remote: Compressing objects:  23% (133/576)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4008244Z remote: Compressing objects:  24% (139/576)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4009382Z remote: Compressing objects:  25% (144/576)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4010241Z remote: Compressing objects:  26% (150/576)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4010862Z remote: Compressing objects:  27% (156/576)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4011465Z remote: Compressing objects:  28% (162/576)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4012077Z remote: Compressing objects:  29% (168/576)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4012676Z remote: Compressing objects:  30% (173/576)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4013270Z remote: Compressing objects:  31% (179/576)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4013875Z remote: Compressing objects:  32% (185/576)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4014466Z remote: Compressing objects:  33% (191/576)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4015060Z remote: Compressing objects:  34% (196/576)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4015654Z remote: Compressing objects:  35% (202/576)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4016277Z remote: Compressing objects:  36% (208/576)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4016869Z remote: Compressing objects:  37% (214/576)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4017896Z remote: Compressing objects:  38% (219/576)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4019466Z remote: Compressing objects:  39% (225/576)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4020489Z remote: Compressing objects:  40% (231/576)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4021108Z remote: Compressing objects:  41% (237/576)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4022257Z remote: Compressing objects:  42% (242/576)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4023097Z remote: Compressing objects:  43% (248/576)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4023717Z remote: Compressing objects:  44% (254/576)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4024311Z remote: Compressing objects:  45% (260/576)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4024913Z remote: Compressing objects:  46% (265/576)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4025511Z remote: Compressing objects:  47% (271/576)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4026303Z remote: Compressing objects:  48% (277/576)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4026915Z remote: Compressing objects:  49% (283/576)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4027707Z remote: Compressing objects:  50% (288/576)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4028305Z remote: Compressing objects:  51% (294/576)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4028909Z remote: Compressing objects:  52% (300/576)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4029509Z remote: Compressing objects:  53% (306/576)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4030105Z remote: Compressing objects:  54% (312/576)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4030712Z remote: Compressing objects:  55% (317/576)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4031303Z remote: Compressing objects:  56% (323/576)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4032199Z remote: Compressing objects:  57% (329/576)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4033212Z remote: Compressing objects:  58% (335/576)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4034606Z remote: Compressing objects:  59% (340/576)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4035351Z remote: Compressing objects:  60% (346/576)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4036127Z remote: Compressing objects:  61% (352/576)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4036740Z remote: Compressing objects:  62% (358/576)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4037537Z remote: Compressing objects:  63% (363/576)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4038213Z remote: Compressing objects:  64% (369/576)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4038817Z remote: Compressing objects:  65% (375/576)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4039427Z remote: Compressing objects:  66% (381/576)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4040021Z remote: Compressing objects:  67% (386/576)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4040622Z remote: Compressing objects:  68% (392/576)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4041219Z remote: Compressing objects:  69% (398/576)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4041824Z remote: Compressing objects:  70% (404/576)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4042424Z remote: Compressing objects:  71% (409/576)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4043011Z remote: Compressing objects:  72% (415/576)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4043611Z remote: Compressing objects:  73% (421/576)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4044654Z remote: Compressing objects:  74% (427/576)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4046051Z remote: Compressing objects:  75% (432/576)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4046874Z remote: Compressing objects:  76% (438/576)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4049100Z remote: Compressing objects:  77% (444/576)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4050611Z remote: Compressing objects:  78% (450/576)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4051698Z remote: Compressing objects:  79% (456/576)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4052709Z remote: Compressing objects:  80% (461/576)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4053707Z remote: Compressing objects:  81% (467/576)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4054708Z remote: Compressing objects:  82% (473/576)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4055702Z remote: Compressing objects:  83% (479/576)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4056725Z remote: Compressing objects:  84% (484/576)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4058450Z remote: Compressing objects:  85% (490/576)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4059844Z remote: Compressing objects:  86% (496/576)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4061520Z remote: Compressing objects:  87% (502/576)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4062816Z remote: Compressing objects:  88% (507/576)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4063809Z remote: Compressing objects:  89% (513/576)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4064802Z remote: Compressing objects:  90% (519/576)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4065787Z remote: Compressing objects:  91% (525/576)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4066781Z remote: Compressing objects:  92% (530/576)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4067982Z remote: Compressing objects:  93% (536/576)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4068981Z remote: Compressing objects:  94% (542/576)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4069975Z remote: Compressing objects:  95% (548/576)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4070966Z remote: Compressing objects:  96% (553/576)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4072412Z remote: Compressing objects:  97% (559/576)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4074165Z remote: Compressing objects:  98% (565/576)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4075938Z remote: Compressing objects:  99% (571/576)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4076962Z remote: Compressing objects: 100% (576/576)        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4078213Z remote: Compressing objects: 100% (576/576), done.        
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4079268Z Receiving objects:   0% (1/1076)
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4080040Z Receiving objects:   1% (11/1076)
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4080837Z Receiving objects:   2% (22/1076)
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4081624Z Receiving objects:   3% (33/1076)
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4360616Z Receiving objects:   4% (44/1076)
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4363959Z Receiving objects:   5% (54/1076)
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4364852Z Receiving objects:   6% (65/1076)
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4365705Z Receiving objects:   7% (76/1076)
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4366694Z Receiving objects:   8% (87/1076)
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4367878Z Receiving objects:   9% (97/1076)
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4368816Z Receiving objects:  10% (108/1076)
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4369764Z Receiving objects:  11% (119/1076)
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4370912Z Receiving objects:  12% (130/1076)
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4372941Z Receiving objects:  13% (140/1076)
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4374380Z Receiving objects:  14% (151/1076)
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4375615Z Receiving objects:  15% (162/1076)
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4378541Z Receiving objects:  16% (173/1076)
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4379566Z Receiving objects:  17% (183/1076)
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4380379Z Receiving objects:  18% (194/1076)
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4381303Z Receiving objects:  19% (205/1076)
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4382523Z Receiving objects:  20% (216/1076)
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4383729Z Receiving objects:  21% (226/1076)
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4384916Z Receiving objects:  22% (237/1076)
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4386072Z Receiving objects:  23% (248/1076)
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4387107Z Receiving objects:  24% (259/1076)
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4388554Z Receiving objects:  25% (269/1076)
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4389136Z Receiving objects:  26% (280/1076)
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4389635Z Receiving objects:  27% (291/1076)
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4390345Z Receiving objects:  28% (302/1076)
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4391469Z Receiving objects:  29% (313/1076)
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4391995Z Receiving objects:  30% (323/1076)
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4392476Z Receiving objects:  31% (334/1076)
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4393090Z Receiving objects:  32% (345/1076)
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4393583Z Receiving objects:  33% (356/1076)
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4394067Z Receiving objects:  34% (366/1076)
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4394636Z Receiving objects:  35% (377/1076)
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4395175Z Receiving objects:  36% (388/1076)
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4395910Z Receiving objects:  37% (399/1076)
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4396598Z Receiving objects:  38% (409/1076)
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4397594Z Receiving objects:  39% (420/1076)
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4398391Z Receiving objects:  40% (431/1076)
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4399171Z Receiving objects:  41% (442/1076)
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4399975Z Receiving objects:  42% (452/1076)
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4400634Z Receiving objects:  43% (463/1076)
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4401131Z Receiving objects:  44% (474/1076)
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4401792Z Receiving objects:  45% (485/1076)
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4402620Z Receiving objects:  46% (495/1076)
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4403418Z Receiving objects:  47% (506/1076)
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4404043Z Receiving objects:  48% (517/1076)
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4404835Z Receiving objects:  49% (528/1076)
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4405611Z Receiving objects:  50% (538/1076)
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4406098Z Receiving objects:  51% (549/1076)
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4406565Z Receiving objects:  52% (560/1076)
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4407046Z Receiving objects:  53% (571/1076)
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4407805Z Receiving objects:  54% (582/1076)
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4408309Z Receiving objects:  55% (592/1076)
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4536552Z Receiving objects:  56% (603/1076)
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4576783Z Receiving objects:  57% (614/1076)
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4610427Z Receiving objects:  58% (625/1076)
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4611429Z Receiving objects:  59% (635/1076)
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4628818Z Receiving objects:  60% (646/1076)
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4632080Z Receiving objects:  61% (657/1076)
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4655316Z Receiving objects:  62% (668/1076)
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4656814Z Receiving objects:  63% (678/1076)
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4694470Z Receiving objects:  64% (689/1076)
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4718166Z Receiving objects:  65% (700/1076)
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4719171Z Receiving objects:  66% (711/1076)
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4720029Z Receiving objects:  67% (721/1076)
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4733750Z Receiving objects:  68% (732/1076)
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4734758Z Receiving objects:  69% (743/1076)
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4746639Z Receiving objects:  70% (754/1076)
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4791665Z Receiving objects:  71% (764/1076)
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4792541Z Receiving objects:  72% (775/1076)
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4794379Z Receiving objects:  73% (786/1076)
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4811444Z Receiving objects:  74% (797/1076)
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4812346Z Receiving objects:  75% (807/1076)
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4814181Z Receiving objects:  76% (818/1076)
+build	Run actions/checkout@v3	2026-03-29T11:49:01.4940411Z Receiving objects:  77% (829/1076)
+build	Run actions/checkout@v3	2026-03-29T11:49:01.5269681Z Receiving objects:  78% (840/1076)
+build	Run actions/checkout@v3	2026-03-29T11:49:01.5431298Z Receiving objects:  79% (851/1076)
+build	Run actions/checkout@v3	2026-03-29T11:49:01.6439200Z Receiving objects:  80% (861/1076)
+build	Run actions/checkout@v3	2026-03-29T11:49:01.6579723Z Receiving objects:  81% (872/1076)
+build	Run actions/checkout@v3	2026-03-29T11:49:01.7124448Z Receiving objects:  82% (883/1076)
+build	Run actions/checkout@v3	2026-03-29T11:49:01.7422063Z Receiving objects:  83% (894/1076)
+build	Run actions/checkout@v3	2026-03-29T11:49:01.8518406Z Receiving objects:  84% (904/1076)
+build	Run actions/checkout@v3	2026-03-29T11:49:01.9583132Z Receiving objects:  85% (915/1076)
+build	Run actions/checkout@v3	2026-03-29T11:49:01.9971792Z Receiving objects:  86% (926/1076), 21.10 MiB | 42.19 MiB/s
+build	Run actions/checkout@v3	2026-03-29T11:49:02.0132627Z Receiving objects:  87% (937/1076), 21.10 MiB | 42.19 MiB/s
+build	Run actions/checkout@v3	2026-03-29T11:49:02.2252682Z Receiving objects:  88% (947/1076), 21.10 MiB | 42.19 MiB/s
+build	Run actions/checkout@v3	2026-03-29T11:49:02.2983688Z Receiving objects:  89% (958/1076), 21.10 MiB | 42.19 MiB/s
+build	Run actions/checkout@v3	2026-03-29T11:49:02.3552222Z Receiving objects:  90% (969/1076), 21.10 MiB | 42.19 MiB/s
+build	Run actions/checkout@v3	2026-03-29T11:49:02.3944001Z Receiving objects:  91% (980/1076), 21.10 MiB | 42.19 MiB/s
+build	Run actions/checkout@v3	2026-03-29T11:49:02.8938388Z Receiving objects:  91% (986/1076), 42.33 MiB | 42.32 MiB/s
+build	Run actions/checkout@v3	2026-03-29T11:49:03.0583324Z Receiving objects:  92% (990/1076), 42.33 MiB | 42.32 MiB/s
+build	Run actions/checkout@v3	2026-03-29T11:49:03.1606294Z Receiving objects:  93% (1001/1076), 62.49 MiB | 41.66 MiB/s
+build	Run actions/checkout@v3	2026-03-29T11:49:03.1690098Z Receiving objects:  94% (1012/1076), 62.49 MiB | 41.66 MiB/s
+build	Run actions/checkout@v3	2026-03-29T11:49:03.1693155Z Receiving objects:  95% (1023/1076), 62.49 MiB | 41.66 MiB/s
+build	Run actions/checkout@v3	2026-03-29T11:49:03.1694133Z Receiving objects:  96% (1033/1076), 62.49 MiB | 41.66 MiB/s
+build	Run actions/checkout@v3	2026-03-29T11:49:03.1694940Z Receiving objects:  97% (1044/1076), 62.49 MiB | 41.66 MiB/s
+build	Run actions/checkout@v3	2026-03-29T11:49:03.1695796Z Receiving objects:  98% (1055/1076), 62.49 MiB | 41.66 MiB/s
+build	Run actions/checkout@v3	2026-03-29T11:49:03.1783621Z Receiving objects:  99% (1066/1076), 62.49 MiB | 41.66 MiB/s
+build	Run actions/checkout@v3	2026-03-29T11:49:03.1784983Z remote: Total 1076 (delta 302), reused 1068 (delta 302), pack-reused 0 (from 0)        
+build	Run actions/checkout@v3	2026-03-29T11:49:03.1799999Z Receiving objects: 100% (1076/1076), 62.49 MiB | 41.66 MiB/s
+build	Run actions/checkout@v3	2026-03-29T11:49:03.1802167Z Receiving objects: 100% (1076/1076), 73.61 MiB | 41.23 MiB/s, done.
+build	Run actions/checkout@v3	2026-03-29T11:49:03.1808624Z Resolving deltas:   0% (0/302)
+build	Run actions/checkout@v3	2026-03-29T11:49:03.1809260Z Resolving deltas:   1% (4/302)
+build	Run actions/checkout@v3	2026-03-29T11:49:03.1809820Z Resolving deltas:   2% (7/302)
+build	Run actions/checkout@v3	2026-03-29T11:49:03.1810344Z Resolving deltas:   3% (10/302)
+build	Run actions/checkout@v3	2026-03-29T11:49:03.1810962Z Resolving deltas:   4% (13/302)
+build	Run actions/checkout@v3	2026-03-29T11:49:03.1811435Z Resolving deltas:   5% (16/302)
+build	Run actions/checkout@v3	2026-03-29T11:49:03.1811879Z Resolving deltas:   6% (19/302)
+build	Run actions/checkout@v3	2026-03-29T11:49:03.1812335Z Resolving deltas:   7% (22/302)
+build	Run actions/checkout@v3	2026-03-29T11:49:03.1812782Z Resolving deltas:   8% (25/302)
+build	Run actions/checkout@v3	2026-03-29T11:49:03.1813246Z Resolving deltas:   9% (28/302)
+build	Run actions/checkout@v3	2026-03-29T11:49:03.1813709Z Resolving deltas:  10% (31/302)
+build	Run actions/checkout@v3	2026-03-29T11:49:03.1814262Z Resolving deltas:  11% (34/302)
+build	Run actions/checkout@v3	2026-03-29T11:49:03.1814774Z Resolving deltas:  12% (37/302)
+build	Run actions/checkout@v3	2026-03-29T11:49:03.1815563Z Resolving deltas:  13% (40/302)
+build	Run actions/checkout@v3	2026-03-29T11:49:03.1816048Z Resolving deltas:  14% (43/302)
+build	Run actions/checkout@v3	2026-03-29T11:49:03.1816562Z Resolving deltas:  15% (46/302)
+build	Run actions/checkout@v3	2026-03-29T11:49:03.1817012Z Resolving deltas:  16% (49/302)
+build	Run actions/checkout@v3	2026-03-29T11:49:03.1817703Z Resolving deltas:  17% (52/302)
+build	Run actions/checkout@v3	2026-03-29T11:49:03.1818151Z Resolving deltas:  18% (55/302)
+build	Run actions/checkout@v3	2026-03-29T11:49:03.1818617Z Resolving deltas:  19% (58/302)
+build	Run actions/checkout@v3	2026-03-29T11:49:03.1819076Z Resolving deltas:  20% (61/302)
+build	Run actions/checkout@v3	2026-03-29T11:49:03.1819515Z Resolving deltas:  21% (64/302)
+build	Run actions/checkout@v3	2026-03-29T11:49:03.1819954Z Resolving deltas:  22% (67/302)
+build	Run actions/checkout@v3	2026-03-29T11:49:03.1820399Z Resolving deltas:  23% (70/302)
+build	Run actions/checkout@v3	2026-03-29T11:49:03.1820831Z Resolving deltas:  24% (73/302)
+build	Run actions/checkout@v3	2026-03-29T11:49:03.1821308Z Resolving deltas:  25% (76/302)
+build	Run actions/checkout@v3	2026-03-29T11:49:03.1821751Z Resolving deltas:  26% (79/302)
+build	Run actions/checkout@v3	2026-03-29T11:49:03.1822184Z Resolving deltas:  27% (82/302)
+build	Run actions/checkout@v3	2026-03-29T11:49:03.1822628Z Resolving deltas:  28% (85/302)
+build	Run actions/checkout@v3	2026-03-29T11:49:03.1823058Z Resolving deltas:  29% (88/302)
+build	Run actions/checkout@v3	2026-03-29T11:49:03.1823504Z Resolving deltas:  30% (91/302)
+build	Run actions/checkout@v3	2026-03-29T11:49:03.1823954Z Resolving deltas:  31% (94/302)
+build	Run actions/checkout@v3	2026-03-29T11:49:03.1824396Z Resolving deltas:  32% (97/302)
+build	Run actions/checkout@v3	2026-03-29T11:49:03.1824834Z Resolving deltas:  33% (100/302)
+build	Run actions/checkout@v3	2026-03-29T11:49:03.1825282Z Resolving deltas:  34% (103/302)
+build	Run actions/checkout@v3	2026-03-29T11:49:03.1825721Z Resolving deltas:  35% (106/302)
+build	Run actions/checkout@v3	2026-03-29T11:49:03.1830490Z Resolving deltas:  36% (109/302)
+build	Run actions/checkout@v3	2026-03-29T11:49:03.1836603Z Resolving deltas:  37% (112/302)
+build	Run actions/checkout@v3	2026-03-29T11:49:03.1837215Z Resolving deltas:  38% (115/302)
+build	Run actions/checkout@v3	2026-03-29T11:49:03.1840780Z Resolving deltas:  39% (118/302)
+build	Run actions/checkout@v3	2026-03-29T11:49:03.1841931Z Resolving deltas:  40% (121/302)
+build	Run actions/checkout@v3	2026-03-29T11:49:03.1842885Z Resolving deltas:  41% (124/302)
+build	Run actions/checkout@v3	2026-03-29T11:49:03.1843771Z Resolving deltas:  42% (127/302)
+build	Run actions/checkout@v3	2026-03-29T11:49:03.1844837Z Resolving deltas:  43% (130/302)
+build	Run actions/checkout@v3	2026-03-29T11:49:03.1846318Z Resolving deltas:  44% (133/302)
+build	Run actions/checkout@v3	2026-03-29T11:49:03.1847166Z Resolving deltas:  45% (136/302)
+build	Run actions/checkout@v3	2026-03-29T11:49:03.1847939Z Resolving deltas:  46% (139/302)
+build	Run actions/checkout@v3	2026-03-29T11:49:03.1848727Z Resolving deltas:  47% (142/302)
+build	Run actions/checkout@v3	2026-03-29T11:49:03.1849175Z Resolving deltas:  48% (145/302)
+build	Run actions/checkout@v3	2026-03-29T11:49:03.1849610Z Resolving deltas:  49% (148/302)
+build	Run actions/checkout@v3	2026-03-29T11:49:03.1850036Z Resolving deltas:  50% (151/302)
+build	Run actions/checkout@v3	2026-03-29T11:49:03.1850465Z Resolving deltas:  51% (155/302)
+build	Run actions/checkout@v3	2026-03-29T11:49:03.1850892Z Resolving deltas:  52% (158/302)
+build	Run actions/checkout@v3	2026-03-29T11:49:03.1851326Z Resolving deltas:  53% (161/302)
+build	Run actions/checkout@v3	2026-03-29T11:49:03.1851751Z Resolving deltas:  54% (164/302)
+build	Run actions/checkout@v3	2026-03-29T11:49:03.1852239Z Resolving deltas:  55% (167/302)
+build	Run actions/checkout@v3	2026-03-29T11:49:03.1852667Z Resolving deltas:  56% (170/302)
+build	Run actions/checkout@v3	2026-03-29T11:49:03.1853103Z Resolving deltas:  57% (173/302)
+build	Run actions/checkout@v3	2026-03-29T11:49:03.1853536Z Resolving deltas:  58% (176/302)
+build	Run actions/checkout@v3	2026-03-29T11:49:03.1853992Z Resolving deltas:  59% (179/302)
+build	Run actions/checkout@v3	2026-03-29T11:49:03.1854425Z Resolving deltas:  60% (183/302)
+build	Run actions/checkout@v3	2026-03-29T11:49:03.1854848Z Resolving deltas:  61% (185/302)
+build	Run actions/checkout@v3	2026-03-29T11:49:03.1855296Z Resolving deltas:  62% (188/302)
+build	Run actions/checkout@v3	2026-03-29T11:49:03.1855744Z Resolving deltas:  63% (192/302)
+build	Run actions/checkout@v3	2026-03-29T11:49:03.1856189Z Resolving deltas:  64% (194/302)
+build	Run actions/checkout@v3	2026-03-29T11:49:03.1856620Z Resolving deltas:  65% (197/302)
+build	Run actions/checkout@v3	2026-03-29T11:49:03.1857060Z Resolving deltas:  66% (200/302)
+build	Run actions/checkout@v3	2026-03-29T11:49:03.1857757Z Resolving deltas:  67% (203/302)
+build	Run actions/checkout@v3	2026-03-29T11:49:03.1858196Z Resolving deltas:  68% (206/302)
+build	Run actions/checkout@v3	2026-03-29T11:49:03.1858640Z Resolving deltas:  69% (209/302)
+build	Run actions/checkout@v3	2026-03-29T11:49:03.1859081Z Resolving deltas:  70% (212/302)
+build	Run actions/checkout@v3	2026-03-29T11:49:03.1859526Z Resolving deltas:  71% (215/302)
+build	Run actions/checkout@v3	2026-03-29T11:49:03.1859968Z Resolving deltas:  72% (218/302)
+build	Run actions/checkout@v3	2026-03-29T11:49:03.1860409Z Resolving deltas:  73% (221/302)
+build	Run actions/checkout@v3	2026-03-29T11:49:03.1860842Z Resolving deltas:  74% (224/302)
+build	Run actions/checkout@v3	2026-03-29T11:49:03.1861288Z Resolving deltas:  75% (228/302)
+build	Run actions/checkout@v3	2026-03-29T11:49:03.1861725Z Resolving deltas:  76% (230/302)
+build	Run actions/checkout@v3	2026-03-29T11:49:03.1862191Z Resolving deltas:  77% (233/302)
+build	Run actions/checkout@v3	2026-03-29T11:49:03.1862824Z Resolving deltas:  78% (236/302)
+build	Run actions/checkout@v3	2026-03-29T11:49:03.1863570Z Resolving deltas:  79% (239/302)
+build	Run actions/checkout@v3	2026-03-29T11:49:03.1864033Z Resolving deltas:  80% (242/302)
+build	Run actions/checkout@v3	2026-03-29T11:49:03.1864467Z Resolving deltas:  81% (245/302)
+build	Run actions/checkout@v3	2026-03-29T11:49:03.1864907Z Resolving deltas:  82% (248/302)
+build	Run actions/checkout@v3	2026-03-29T11:49:03.1865369Z Resolving deltas:  83% (251/302)
+build	Run actions/checkout@v3	2026-03-29T11:49:03.1959639Z Resolving deltas:  84% (254/302)
+build	Run actions/checkout@v3	2026-03-29T11:49:03.2006511Z Resolving deltas:  85% (257/302)
+build	Run actions/checkout@v3	2026-03-29T11:49:03.2008487Z Resolving deltas:  86% (260/302)
+build	Run actions/checkout@v3	2026-03-29T11:49:03.2009654Z Resolving deltas:  87% (263/302)
+build	Run actions/checkout@v3	2026-03-29T11:49:03.2155980Z Resolving deltas:  88% (266/302)
+build	Run actions/checkout@v3	2026-03-29T11:49:03.2283091Z Resolving deltas:  89% (269/302)
+build	Run actions/checkout@v3	2026-03-29T11:49:03.2398586Z Resolving deltas:  90% (272/302)
+build	Run actions/checkout@v3	2026-03-29T11:49:03.2581081Z Resolving deltas:  91% (275/302)
+build	Run actions/checkout@v3	2026-03-29T11:49:03.2662610Z Resolving deltas:  92% (278/302)
+build	Run actions/checkout@v3	2026-03-29T11:49:03.2722348Z Resolving deltas:  93% (281/302)
+build	Run actions/checkout@v3	2026-03-29T11:49:03.2764916Z Resolving deltas:  94% (284/302)
+build	Run actions/checkout@v3	2026-03-29T11:49:03.2805421Z Resolving deltas:  95% (287/302)
+build	Run actions/checkout@v3	2026-03-29T11:49:03.2835468Z Resolving deltas:  96% (290/302)
+build	Run actions/checkout@v3	2026-03-29T11:49:03.2960724Z Resolving deltas:  97% (293/302)
+build	Run actions/checkout@v3	2026-03-29T11:49:03.2999572Z Resolving deltas:  98% (296/302)
+build	Run actions/checkout@v3	2026-03-29T11:49:03.3212814Z Resolving deltas:  99% (299/302)
+build	Run actions/checkout@v3	2026-03-29T11:49:03.3213604Z Resolving deltas: 100% (302/302)
+build	Run actions/checkout@v3	2026-03-29T11:49:03.3215119Z Resolving deltas: 100% (302/302), done.
+build	Run actions/checkout@v3	2026-03-29T11:49:03.3539109Z From https://github.com/thanchanb/Stellar-Nexus
+build	Run actions/checkout@v3	2026-03-29T11:49:03.3539903Z  * [new ref]         433d8e9cf002ca8cca6eef2f091648bce04043e4 -> origin/main
+build	Run actions/checkout@v3	2026-03-29T11:49:03.3568181Z ##[endgroup]
+build	Run actions/checkout@v3	2026-03-29T11:49:03.3568965Z ##[group]Determining the checkout info
+build	Run actions/checkout@v3	2026-03-29T11:49:03.3570501Z ##[endgroup]
+build	Run actions/checkout@v3	2026-03-29T11:49:03.3571214Z ##[group]Checking out the ref
+build	Run actions/checkout@v3	2026-03-29T11:49:03.3575607Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+build	Run actions/checkout@v3	2026-03-29T11:49:04.2278977Z Switched to a new branch 'main'
+build	Run actions/checkout@v3	2026-03-29T11:49:04.2280328Z branch 'main' set up to track 'origin/main'.
+build	Run actions/checkout@v3	2026-03-29T11:49:04.2326217Z ##[endgroup]
+build	Run actions/checkout@v3	2026-03-29T11:49:04.2361354Z [command]/usr/bin/git log -1 --format='%H'
+build	Run actions/checkout@v3	2026-03-29T11:49:04.2381796Z '433d8e9cf002ca8cca6eef2f091648bce04043e4'
+build	Setup Node.js	﻿2026-03-29T11:49:04.2598515Z ##[group]Run actions/setup-node@v3
+build	Setup Node.js	2026-03-29T11:49:04.2598807Z with:
+build	Setup Node.js	2026-03-29T11:49:04.2598974Z   node-version: 20
+build	Setup Node.js	2026-03-29T11:49:04.2599164Z   always-auth: false
+build	Setup Node.js	2026-03-29T11:49:04.2599356Z   check-latest: false
+build	Setup Node.js	2026-03-29T11:49:04.2599673Z   token: ***
+build	Setup Node.js	2026-03-29T11:49:04.2599848Z ##[endgroup]
+build	Setup Node.js	2026-03-29T11:49:04.4761363Z Found in cache @ /opt/hostedtoolcache/node/20.20.1/x64
+build	Setup Node.js	2026-03-29T11:49:04.4767965Z ##[group]Environment details
+build	Setup Node.js	2026-03-29T11:49:07.5181354Z node: v20.20.1
+build	Setup Node.js	2026-03-29T11:49:07.5181779Z npm: 10.8.2
+build	Setup Node.js	2026-03-29T11:49:07.5182089Z yarn: 1.22.22
+build	Setup Node.js	2026-03-29T11:49:07.5183317Z ##[endgroup]
+build	Install dependencies	﻿2026-03-29T11:49:07.5301962Z ##[group]Run npm install
+build	Install dependencies	2026-03-29T11:49:07.5302281Z [36;1mnpm install[0m
+build	Install dependencies	2026-03-29T11:49:07.5340096Z shell: /usr/bin/bash -e {0}
+build	Install dependencies	2026-03-29T11:49:07.5340367Z ##[endgroup]
+build	Install dependencies	2026-03-29T11:49:14.7862635Z 
+build	Install dependencies	2026-03-29T11:49:14.7869763Z added 230 packages, and audited 231 packages in 7s
+build	Install dependencies	2026-03-29T11:49:14.7870213Z 
+build	Install dependencies	2026-03-29T11:49:14.7870392Z 71 packages are looking for funding
+build	Install dependencies	2026-03-29T11:49:14.7870692Z   run `npm fund` for details
+build	Install dependencies	2026-03-29T11:49:14.7879132Z 
+build	Install dependencies	2026-03-29T11:49:14.7879450Z 1 moderate severity vulnerability
+build	Install dependencies	2026-03-29T11:49:14.7879798Z 
+build	Install dependencies	2026-03-29T11:49:14.7880002Z To address all issues, run:
+build	Install dependencies	2026-03-29T11:49:14.7880327Z   npm audit fix
+build	Install dependencies	2026-03-29T11:49:14.7880451Z 
+build	Install dependencies	2026-03-29T11:49:14.7880807Z Run `npm audit` for details.
+build	Build	﻿2026-03-29T11:49:14.8113875Z ##[group]Run npm run build
+build	Build	2026-03-29T11:49:14.8114194Z [36;1mnpm run build[0m
+build	Build	2026-03-29T11:49:14.8142678Z shell: /usr/bin/bash -e {0}
+build	Build	2026-03-29T11:49:14.8142935Z ##[endgroup]
+build	Build	2026-03-29T11:49:14.9202137Z 
+build	Build	2026-03-29T11:49:14.9202746Z > frontend@0.0.0 build
+build	Build	2026-03-29T11:49:14.9203279Z > tsc -b && vite build
+build	Build	2026-03-29T11:49:14.9203470Z 
+build	Build	2026-03-29T11:49:16.8686245Z ##[error]src/App.test.tsx(1,54): error TS2307: Cannot find module 'vitest' or its corresponding type declarations.
+build	Build	2026-03-29T11:49:16.8699903Z ##[error]src/App.test.tsx(2,52): error TS2307: Cannot find module '@testing-library/react' or its corresponding type declarations.
+build	Build	2026-03-29T11:49:16.8703007Z ##[error]src/App.test.tsx(4,8): error TS2307: Cannot find module '@testing-library/jest-dom' or its corresponding type declarations.
+build	Build	2026-03-29T11:49:16.8705911Z ##[error]src/setupTests.ts(1,8): error TS2307: Cannot find module '@testing-library/jest-dom' or its corresponding type declarations.
+build	Build	2026-03-29T11:49:17.0761589Z ##[error]vite.config.ts(1,1): error TS1185: Merge conflict marker encountered.
+build	Build	2026-03-29T11:49:17.0765661Z ##[error]vite.config.ts(9,1): error TS1185: Merge conflict marker encountered.
+build	Build	2026-03-29T11:49:17.0769191Z ##[error]vite.config.ts(22,1): error TS1185: Merge conflict marker encountered.
+build	Build	2026-03-29T11:49:17.1214718Z ##[error]Process completed with exit code 1.
+build	Post Run actions/checkout@v3	﻿2026-03-29T11:49:17.1314415Z Post job cleanup.
+build	Post Run actions/checkout@v3	2026-03-29T11:49:17.2023969Z [command]/usr/bin/git version
+build	Post Run actions/checkout@v3	2026-03-29T11:49:17.2058050Z git version 2.53.0
+build	Post Run actions/checkout@v3	2026-03-29T11:49:17.2102161Z Temporarily overriding HOME='/home/runner/work/_temp/8aecdc8e-e69d-4450-800b-2bbd41954144' before making global git config changes
+build	Post Run actions/checkout@v3	2026-03-29T11:49:17.2103659Z Adding repository directory to the temporary git global config as a safe directory
+build	Post Run actions/checkout@v3	2026-03-29T11:49:17.2106893Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/Stellar-Nexus/Stellar-Nexus
+build	Post Run actions/checkout@v3	2026-03-29T11:49:17.2137563Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+build	Post Run actions/checkout@v3	2026-03-29T11:49:17.2167500Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+build	Post Run actions/checkout@v3	2026-03-29T11:49:17.2370458Z fatal: No url found for submodule path 'Rise-In(4)' in .gitmodules
+build	Post Run actions/checkout@v3	2026-03-29T11:49:17.2412756Z ##[warning]The process '/usr/bin/git' failed with exit code 128
+build	Complete job	﻿2026-03-29T11:49:17.2492418Z Cleaning up orphan processes
+build	Complete job	2026-03-29T11:49:17.2749952Z ##[warning]Node.js 20 actions are deprecated. The following actions are running on Node.js 20 and may not work as expected: actions/checkout@v3, actions/setup-node@v3. Actions will be forced to run with Node.js 24 by default starting June 2nd, 2026. Node.js 20 will be removed from the runner on September 16th, 2026. Please check if updated versions of these actions are available that support Node.js 24. To opt into Node.js 24 now, set the FORCE_JAVASCRIPT_ACTIONS_TO_NODE24=true environment variable on the runner or in your workflow file. Once Node.js 24 becomes the default, you can temporarily opt out by setting ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
