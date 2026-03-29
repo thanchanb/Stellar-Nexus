@@ -15,7 +15,7 @@ A high-performance, premium mini-dApp built for the Level 3 Challenge. This expl
 ## 🔗 Live Demo & Resources
 
 - **🌐 Live Demo:** https://frontend-tau-blue-73.vercel.app
-- **🎥 Demo Video:** [Watch the full walkthrough](https://frontend-tau-blue-73.vercel.app) *(or see `stellar_explorer_demo.webp` in repo root)*
+- **🎥 Demo Video:** [Premium UI Walkthrough (Click to Watch)](https://github.com/thanchanb/stellar-explorer-dapp/blob/main/stellar_explorer_demo.webp)
 - **✅ Test Results:** **6/6 Tests Passing** (Vitest).
 
 ![Verified Test Results](frontend/docs/test-output.png)
