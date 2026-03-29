@@ -1,3 +1,48 @@
+<<<<<<< HEAD
+# Stellar Nexus - Advanced Web3 dApp 🚀
+
+A complete end-to-end dApp built for the Level 4 Challenge. This project demonstrates advanced contract patterns, custom token creation, realtime event streaming, CI/CD pipeline, and mobile responsiveness.
+
+## 🌟 Features
+
+- **Custom Token Creation:** Dynamically generates a new issuing account on Stellar Testnet, funds it via Friendbot, creates an asset trustline using Freighter, and mints tokens directly to the user's wallet.
+- **Advanced Event Streaming (Real-time):** Listens to live transactions on the Stellar Testnet using Server-Sent Events (SSE). 
+- **Production Ready:** Configured with an automated GitHub Actions CI/CD pipeline.
+- **Mobile Responsive Design:** Modern UI with glassmorphism design, vibrant gradients, and fully fluid layouts for all devices.
+
+## 🔗 Live Demo & Deployment
+
+- **Live Demo Link:** [https://frontend-tau-blue-73.vercel.app](https://frontend-tau-blue-73.vercel.app)
+- **GitHub Repository:** [https://github.com/thanchanb/Stellar-Nexus](https://github.com/thanchanb/Stellar-Nexus)
+
+## 🖼️ Media & Evidence
+
+- **Screenshot: Mobile Responsive View:**  
+  ![Mobile View](docs/mobile-view.png)
+- **Screenshot/Badge: CI/CD pipeline running:**  
+  [![CI/CD Pipeline](https://github.com/thanchanb/Stellar-Nexus/actions/workflows/ci.yml/badge.svg)](https://github.com/thanchanb/Stellar-Nexus/actions)
+- **Token Code Example:** `RISEIN`
+- **Asset Issuer (Example):** `GDQ... (dynamically generated per mint)`
+
+## 🏗️ Soroban Smart Contracts
+
+This repository now includes the advanced Soroban contracts required for Level 4:
+
+- **📜 Voting Contract (`contracts/voting`):** Implements secure, authorized voting logic with state management and protection against double-voting.
+- **📜 Hello World (`contracts/hello_world`):** A canonical Soroban verification contract.
+- **🛠️ Cargo Workspace:** Fully configured for parallel development and building via the root-level `Cargo.toml`.
+
+To build all contracts:
+```bash
+cargo build --target wasm32-unknown-unknown --release
+```
+
+## 🛠️ Technology Stack
+- **Frontend Framework:** React + Vite (TypeScript)
+- **Stellar Integration:** `@stellar/stellar-sdk` & `@stellar/freighter-api`
+- **Styling:** Vanilla CSS (Glassmorphism & Full CSS Variables mapping)
+- **CI/CD:** GitHub Actions
+=======
 # Stellar Explorer Premium Dashboard 🚀
 
 A high-performance, premium mini-dApp built for the Level 3 Challenge. This explorer features a state-of-the-art dashboard design inspired by modern fintech applications, with real-time fetching from the Stellar Horizon Testnet.
@@ -51,17 +96,26 @@ soroban contract build
 - **Styling:** Vanilla CSS (Glassmorphism & Gradients)
 - **Testing:** Vitest, React Testing Library, JSDOM
 - **Icons:** Lucide React
+>>>>>>> local_parent/main
 
 ## 🚀 Getting Started
 
 ### Prerequisites
+<<<<<<< HEAD
+Make sure you have Node.js and npm installed. Download [Freighter Wallet](https://freighter.app/) extension and switch it to Testnet.
+=======
 Make sure you have Node.js and npm installed.
+>>>>>>> local_parent/main
 
 ### Installation & Run
 
 1. Clone the repository:
    ```bash
+<<<<<<< HEAD
+   git clone https://github.com/thanchanb/stellar-explorer-dapp.git
+=======
    git clone https://github.com/your-username/stellar-explorer-dapp.git
+>>>>>>> local_parent/main
    cd stellar-explorer-dapp/frontend
    ```
 
@@ -77,6 +131,17 @@ Make sure you have Node.js and npm installed.
 
 4. Open `http://localhost:5173` in your browser.
 
+<<<<<<< HEAD
+## ✅ Requirements Checklist Fulfilled
+- [x] Inter-contract call working / Custom Token Deployed 
+- [x] Advanced event streaming (real-time) via Horizon SSE
+- [x] CI/CD running
+- [x] Mobile responsive Web3 CSS Glassmorphism
+- [x] Minimum 8+ meaningful commits
+
+---
+*Built with ❤️ for Rise-In Web3 Challenge*
+=======
 ### Running Tests
 
 To run the Vitest test suite and verify the functionality:
@@ -94,3 +159,4 @@ npm run test
 
 ---
 *Designed & Developed with ❤️ for the Rise-In Level 3 Challenge. This project represents a state-of-the-art implementation of the Stellar Horizon interaction with focus on premium UI and 100% test reliability.* 🚀
+>>>>>>> local_parent/main
