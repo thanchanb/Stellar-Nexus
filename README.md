@@ -1,78 +1,72 @@
 # Stellar Nexus - Advanced Web3 dApp 🚀
 
-A complete end-to-end dApp built for the Level 4 Challenge. This project demonstrates advanced contract patterns, custom token creation, realtime event streaming, CI/CD pipeline, and mobile responsiveness.
+A high-performance, production-ready Web3 application built for the **Stellar Advanced Contract Patterns Challenge**. This project integrates Soroban smart contracts, real-time data streaming, and custom asset mechanics into a unified "Nexus" interface.
 
-## 🌟 Features
+## 🌟 Advanced Features
 
-- **Custom Token Creation:** Dynamically generates a new issuing account on Stellar Testnet, funds it via Friendbot, creates an asset trustline using Freighter, and mints tokens directly to the user's wallet.
-- **Advanced Event Streaming (Real-time):** Listens to live transactions on the Stellar Testnet using Server-Sent Events (SSE). 
-- **Production Ready:** Configured with an automated GitHub Actions CI/CD pipeline.
-- **Mobile Responsive Design:** Modern UI with glassmorphism design, vibrant gradients, and fully fluid layouts for all devices.
+### 1. Advanced Contract Patterns (Inter-Contract Calls)
+- **📜 Voting Engine (`contracts/voting`):** Beyond simple state management, this contract implements an **Inter-Contract Call Pattern**.
+- **Mechanics:** When a user casts a vote, the Voting contract dynamically initializes a client for an external `Hello` service contract (using its `Address`) and invokes a greeting function. this fulfills the "Inter-contract call working" requirement.
+- **Security:** Implements `voter.require_auth()` and persistent storage checks to prevent double-voting.
 
-## 🔗 Live Demo & Deployment
+### 2. Custom Token Mechanics
+- **💎 Custom Token Generator:** A full implementation of the Stellar Classic Asset protocol.
+- **Dynamic Issuance:**
+  1. Generates a unique, one-time Issuing Account.
+  2. Automates account funding via the Stellar Friendbot.
+  3. Establishes a **Trustline** between the user's Freighter wallet and the new asset.
+  4. Mints and transfers tokens to the user in a single workflow.
 
-- **Live Demo Link:** [https://frontend-tau-blue-73.vercel.app](https://frontend-tau-blue-73.vercel.app)
-- **GitHub Repository:** [https://github.com/thanchanb/Stellar-Nexus](https://github.com/thanchanb/Stellar-Nexus)
+### 3. Real-time Event Streaming
+- **⚡ Live Testnet Feed:** Uses Server-Sent Events (SSE) via the Horizon API to stream global payments in real-time. This demonstrates high-performance data handling in a Web3 frontend.
 
-## 🖼️ Media & Evidence
+### 4. Production Readiness & CI/CD
+- **🤖 Automated Pipeline:** Full GitHub Actions CI/CD pipeline (`.github/workflows/ci.yml`) that validates builds on every push to the `main` branch.
+- **🎨 Glassmorphism UI:** A premium, mobile-responsive design built with vanilla CSS, featuring vibrant gradients, blur effects, and smooth animations.
 
-- **Screenshot: Mobile Responsive View:**  
-  ![Mobile View](docs/mobile-view.png)
-- **Screenshot/Badge: CI/CD pipeline running:**  
-  [![CI/CD Pipeline](https://github.com/thanchanb/Stellar-Nexus/actions/workflows/ci.yml/badge.svg)](https://github.com/thanchanb/Stellar-Nexus/actions)
-- **Token Code Example:** `RISEIN`
-- **Asset Issuer (Example):** `GDQ... (dynamically generated per mint)`
+---
 
-## 🏗️ Soroban Smart Contracts
+## 🔗 Live Links
 
-This repository now includes the advanced Soroban contracts required for Level 4:
+- **🌐 Live Demo:** [https://frontend-tau-blue-73.vercel.app](https://frontend-tau-blue-73.vercel.app)
+- **📁 GitHub Repo:** [https://github.com/thanchanb/Stellar-Nexus](https://github.com/thanchanb/Stellar-Nexus)
 
-- **📜 Voting Contract (`contracts/voting`):** Implements secure, authorized voting logic with state management and protection against double-voting.
-- **📜 Hello World (`contracts/hello_world`):** A canonical Soroban verification contract.
-- **🛠️ Cargo Workspace:** Fully configured for parallel development and building via the root-level `Cargo.toml`.
+## 📸 Media Evidence
 
-To build all contracts:
+### Mobile Responsive View
+*Optimized for all screen sizes from smartphones to desktops.*
+![Mobile View](docs/mobile-view.png)
+
+### CI/CD Pipeline
+*Continuous Integration ensures 100% build stability.*
+[![CI/CD Pipeline](https://github.com/thanchanb/Stellar-Nexus/actions/workflows/ci.yml/badge.svg)](https://github.com/thanchanb/Stellar-Nexus/actions)
+
+---
+
+## 🛠️ Soroban Smart Contracts
+
+The project uses a Cargo workspace to manage multiple Soroban contracts:
+
+| Contract | Path | Feature |
+| :--- | :--- | :--- |
+| **Voting** | `contracts/voting` | Inter-contract Calls, Auth, Persistent Storage |
+| **Hello** | `contracts/hello_world` | Service provider for inter-contract tests |
+
+### Build Instructions
 ```bash
+# Build all contracts for production
 cargo build --target wasm32-unknown-unknown --release
 ```
 
-## 🛠️ Technology Stack
-- **Frontend Framework:** React + Vite (TypeScript)
-- **Stellar Integration:** `@stellar/stellar-sdk` & `@stellar/freighter-api`
-- **Styling:** Vanilla CSS (Glassmorphism & Full CSS Variables mapping)
-- **CI/CD:** GitHub Actions
+---
 
-## 🚀 Getting Started
+## ✅ Submission Checklist Verification
 
-### Prerequisites
-Make sure you have Node.js and npm installed. Download [Freighter Wallet](https://freighter.app/) extension and switch it to Testnet.
-
-### Installation & Run
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/thanchanb/Stellar-Nexus.git
-   cd Stellar-Nexus/frontend
-   ```
-
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-
-3. Run the development server:
-   ```bash
-   npm run dev
-   ```
-
-4. Open `http://localhost:5173` in your browser.
-
-## ✅ Requirements Checklist Fulfilled
-- [x] Inter-contract call working / Custom Token Deployed 
-- [x] Advanced event streaming (real-time) via Horizon SSE
-- [x] CI/CD running
-- [x] Mobile responsive Web3 CSS Glassmorphism
-- [x] Minimum 8+ meaningful commits
+- [x] **Inter-contract call working:** Implemented in `contracts/voting/src/lib.rs` using `HelloClient`.
+- [x] **Custom token deployed:** Functional Token Generator in the frontend.
+- [x] **CI/CD running:** Configured via GitHub Actions and verified with build badge.
+- [x] **Mobile responsive:** Fluid grid system and media queries implemented in `index.css`.
+- [x] **8+ meaningful commits:** History contains comprehensive progress logs.
 
 ---
-*Built with ❤️ for Rise-In Web3 Challenge*
+*Developed by Thanchandrumij for the Rise-In Advanced Stellar Challenge.*
