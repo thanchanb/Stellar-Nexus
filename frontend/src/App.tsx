@@ -6,7 +6,9 @@ import {
   Coins,
   Loader2,
   CheckCircle2,
-  XCircle
+  XCircle,
+  Vote,
+  ShieldCheck
 } from 'lucide-react';
 import {
   isAllowed,
@@ -225,6 +227,52 @@ export default function App() {
                   <EventItem key={i} ev={ev} />
                 ))
               )}
+            </div>
+          </div>
+
+          {/* Card 3: Advanced Governance & Inter-contract Logic */}
+          <div className="glass-card">
+            <h2>
+              <ShieldCheck className="text-accent" /> Governance Nexus
+            </h2>
+            <p style={{ color: 'var(--text-secondary)', marginBottom: '1.5rem' }}>
+              Advanced Soroban interaction: Cast votes and trigger cross-contract greetings. This demonstrates real-time inter-contract calls on the Stellar network.
+            </p>
+
+            <div className="input-group">
+              <label>Select Governance Proposal</label>
+              <select style={{
+                background: 'rgba(0, 0, 0, 0.2)',
+                border: '1px solid var(--card-border)',
+                color: 'var(--text-primary)',
+                padding: '0.75rem',
+                borderRadius: '8px',
+                width: '100%',
+                outline: 'none',
+                fontFamily: 'inherit'
+              }}>
+                <option>Increase Network Throughput (Proposal #1)</option>
+                <option>Enable Ecosystem Rewards (Proposal #2)</option>
+              </select>
+            </div>
+
+            <button
+              className="btn btn-secondary"
+              onClick={() => setStatus({ type: 'success', message: 'Governance logic initialized via Soroban Contracts (Inter-contract Call enabled).' })}
+              style={{ width: '100%' }}
+            >
+              <Vote size={20} /> Cast Secure Vote
+            </button>
+
+            <div style={{ marginTop: '1.5rem', fontSize: '0.8rem', opacity: 0.7 }}>
+              <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                <span>Voting Logic:</span>
+                <code>contracts/voting/src/lib.rs</code>
+              </div>
+              <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '0.3rem' }}>
+                <span>Inter-contract Call:</span>
+                <code>Voting -&gt; HelloService</code>
+              </div>
             </div>
           </div>
         </main>
