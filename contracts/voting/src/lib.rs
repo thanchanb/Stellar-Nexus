@@ -1,5 +1,5 @@
 #![no_std]
-use soroban_sdk::{contract, contractimpl, symbol_short, vec, Address, Env, Symbol, Vec};
+use soroban_sdk::{contract, contractclient, contractimpl, symbol_short, Address, Env, Symbol, Vec};
 
 #[contractclient(name = "HelloClient")]
 pub trait Hello {
@@ -98,7 +98,7 @@ mod test {
 
         // Vote for different option
         let voter3 = Address::generate(&env);
-        client.vote(&voter3, &option_b);
+        client.vote(&voter3, &option_b, &hello_id);
         assert_eq!(client.get_votes(&option_b), 1);
     }
 

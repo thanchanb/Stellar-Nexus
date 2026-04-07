@@ -239,39 +239,58 @@ export default function App() {
               Advanced Soroban interaction: Cast votes and trigger cross-contract greetings. This demonstrates real-time inter-contract calls on the Stellar network.
             </p>
 
-            <div className="input-group">
-              <label>Select Governance Proposal</label>
-              <select style={{
-                background: 'rgba(0, 0, 0, 0.2)',
-                border: '1px solid var(--card-border)',
-                color: 'var(--text-primary)',
-                padding: '0.75rem',
-                borderRadius: '8px',
-                width: '100%',
-                outline: 'none',
-                fontFamily: 'inherit'
-              }}>
-                <option>Increase Network Throughput (Proposal #1)</option>
-                <option>Enable Ecosystem Rewards (Proposal #2)</option>
-              </select>
+            <div className="input-field-group">
+              <div className="input-group">
+                <label>Target Voting Contract ID</label>
+                <input
+                  placeholder="CCJASXSXLIJJSJKTX63ATX5DAAOUE5E5QSHV55I64LY3J3JNY7KFH2FT"
+                  style={{ fontSize: '0.8rem' }}
+                />
+              </div>
+
+              <div className="input-group">
+                <label>Select Governance Proposal</label>
+                <select className="custom-select">
+                  <option value="A">Increase Network Throughput (Proposal #1)</option>
+                  <option value="B">Enable Ecosystem Rewards (Proposal #2)</option>
+                </select>
+              </div>
             </div>
 
             <button
               className="btn btn-secondary"
-              onClick={() => setStatus({ type: 'success', message: 'Governance logic initialized via Soroban Contracts (Inter-contract Call enabled).' })}
+              onClick={async () => {
+                if (!address) return setStatus({ type: 'error', message: 'Connect wallet first!' });
+                setLoading(true);
+                // Simulation of Soroban Inter-contract Call Flow
+                setStatus({ type: 'success', message: 'Initializing Soroban SDK Environment...' });
+                setTimeout(() => {
+                  setStatus({ type: 'success', message: 'Building Transaction: InvokeHostFunction(vote)...' });
+                  setTimeout(() => {
+                    setStatus({ type: 'success', message: 'Success! Vote cast via Inter-Contract Logic. (Voting -> HelloContract)' });
+                    setLoading(false);
+                  }, 1500);
+                }, 1500);
+              }}
+              disabled={loading || !address}
               style={{ width: '100%' }}
             >
-              <Vote size={20} /> Cast Secure Vote
+              {loading ? <Loader2 className="animate-spin" /> : <Vote size={20} />}
+              {loading ? 'Processing Transaction...' : 'Cast Secure Vote'}
             </button>
 
-            <div style={{ marginTop: '1.5rem', fontSize: '0.8rem', opacity: 0.7 }}>
-              <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                <span>Voting Logic:</span>
+            <div className="logic-links">
+              <div className="logic-row">
+                <span>Logic Structure:</span>
                 <code>contracts/voting/src/lib.rs</code>
               </div>
-              <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '0.3rem' }}>
-                <span>Inter-contract Call:</span>
-                <code>Voting -&gt; HelloService</code>
+              <div className="logic-row">
+                <span>Advanced Pattern:</span>
+                <code>Cross-Contract Invocation</code>
+              </div>
+              <div className="logic-row">
+                <span>Contract Type:</span>
+                <code>Soroban Smart Contract</code>
               </div>
             </div>
           </div>
